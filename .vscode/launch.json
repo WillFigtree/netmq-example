@@ -4,6 +4,18 @@
    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
    "version": "0.2.0",
    "configurations": [
+       {
+           "name": ".NET Core Launch (intra-app-comms)",
+           "type": "coreclr",
+           "request": "launch",
+           "preLaunchTask": "build",
+           "program": "${workspaceFolder}/intra-app-comms/bin/Debug/netcoreapp3.1/intra-app-comms.dll",
+           "args": [],
+           "cwd": "${workspaceFolder}/intra-app-comms",
+           "stopAtEntry": false,
+           "console": "integratedTerminal",
+           "stopAtEntry":false
+       },
         {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",

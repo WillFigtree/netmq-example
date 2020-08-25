@@ -16,10 +16,9 @@ namespace server
     {
         static string respConnectionString = "@tcp://localhost:5556";
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Console.WriteLine("ZeroMQ server");
-
 
             // setup response socket for request/response operations        
             var resp = new ResponseSocket(respConnectionString);
